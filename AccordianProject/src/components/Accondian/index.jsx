@@ -3,31 +3,55 @@ import data from './data';
 import './style.css'
 function Accordian() {
   const [selected, setSelected] = useState(null);
+  const [enableMultiSection, setEnableMultiSelection] = useState(false);
+  const [multipleSelected, setMultipleSelected] = useState([]);
 
-  function handleSingleSelection(id){
-    setSelected(id === selected? null : id);
+  function handleSingleSelection(id) {
+    setSelected(id === selected ? null : id);
   }
 
+  function handleMultipleSelection(curretId) {
+    const copyMulti = [...multipleSelected];
+    const findCurrentId = copyMulti.indexOf(curretId);
+
+
+    console.log(findCurrentId);
+    if (findCurrentId === -1) copyMulti.push(curretId);
+    else copyMulti.splice(findCurrentId, 1);
+    setMultipleSelected(copyMulti);
+  }
+
+
+
+  console.log(selected, multipleSelected);
   return (
     <div className='wrapper'>
+      <button className='multiSelectBtn' onClick={() => setEnableMultiSelection(!enableMultiSection)}>set multi selection</button>
       <div className='accordian'>
         {
           data && data.length > 0
             ? data.map((dataItem) => (
-              <div className='item'>
-                <div className='title' onClick={()=>handleSingleSelection(dataItem.id)}>
+              <div className='item' key={dataItem.id}>
+                <div className='title' onClick={enableMultiSection ? () => handleMultipleSelection(dataItem.id) : () => handleSingleSelection(dataItem.id)}>
                   <h3>{dataItem.question}</h3>
                   <span>+</span>
                 </div>
                 {
-                  selected === dataItem.id 
-                  ? (
+
+                  enableMultiSection 
+                  ? multipleSelected.indexOf(dataItem.id) !== -1 &&  
                   <div className='desc'>
                     <p>{dataItem.answer}</p>
-                  </div>
-                  )
-                  : null
-               }
+                 </div>
+                 :
+                  selected === dataItem.id
+                    ? (
+                      <div className='desc'>
+                        <p>{dataItem.answer}</p>
+                      </div>
+                    )
+                    : null
+                }
               </div>
 
             ))
