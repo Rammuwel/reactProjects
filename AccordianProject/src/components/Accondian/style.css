@@ -1,0 +1,8 @@
+const data = [
+     {
+       id: "1",
+       question: "What is JavaScript?",
+       answer: "JavaScript is a scripting language. It is different from Java language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation. The JavaScript Translator (embedded in the browser) is responsible for translating the JavaScript code for the web browser."
+     },
+
+];
