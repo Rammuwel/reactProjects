@@ -1,8 +1,36 @@
-const data = [
-     {
-       id: "1",
-       question: "What is JavaScript?",
-       answer: "JavaScript is a scripting language. It is different from Java language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation. The JavaScript Translator (embedded in the browser) is responsible for translating the JavaScript code for the web browser."
-     },
+.wrapper{
+ margin-top: 5rem;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ padding: 1rem;
 
-];
+}
+
+.accordian{
+    display: flex;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.item{
+    background-color: rgb(44, 33, 33);  
+}
+.title, .desc{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.title span{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 0.18rem;
+    
+}

@@ -26,3 +26,5 @@ const data = [
       answer: "In JavaScript, we need closures when a variable which is defined outside the scope in reference is accessed from some inner scope."
     },
 ];
+
+export default data;
