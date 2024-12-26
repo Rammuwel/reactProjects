@@ -26,7 +26,10 @@ function Accordian() {
   console.log(selected, multipleSelected);
   return (
     <div className='wrapper'>
-      <button className='multiSelectBtn' onClick={() => setEnableMultiSelection(!enableMultiSection)}>set multi selection</button>
+      <div className='heading'>
+        <h2>Accodian</h2>
+      </div>
+      <button className='multiSelectBtn' onClick={() => setEnableMultiSelection(!enableMultiSection)}>Set Multi Selection</button>
       <div className='accordian'>
         {
           data && data.length > 0
