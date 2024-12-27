@@ -18,3 +18,10 @@
     font-size: 24px;
     font-weight: 600;
 }
+
+.tree-view-container{
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    
+}

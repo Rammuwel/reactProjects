@@ -13,11 +13,11 @@ function App() {
 
   return (
    <div>
-     {/* <Accordian/>
+     <Accordian/>
      <RandomColor/>
      <StartRatting noOfStars={5}/>
      <ImageSlider url={'https://picsum.photos/v2/list'} limit={10} page={1}/>
-     <LoadMoreData/> */}
+     <LoadMoreData/>
      <TreeView menus={menus}/>
 
    </div>
