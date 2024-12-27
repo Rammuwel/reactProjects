@@ -35,6 +35,8 @@ function ImageSlider({ url, limit=5, page=1}) {
         if (url != '') fetchImg(url);
     }, [url]);
 
+    
+
     if (loading) {
         return <div>Loading data! Please wait</div>
     }
@@ -43,11 +45,13 @@ function ImageSlider({ url, limit=5, page=1}) {
     }
     
      
-
+  
     function handlePre(){
+        
         setCurrentSlide(currentSlide === 0 ? images.length -1: currentSlide - 1);
     }
     function handleNext(){
+       
         setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
     }
 
