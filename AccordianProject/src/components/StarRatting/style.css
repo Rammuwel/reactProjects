@@ -1,0 +1,20 @@
+.starRatting{
+    width: 100%;
+    margin-top: 2rem; 
+    padding: 1rem;
+}
+.stars{
+    width: 60%;
+    padding: 1rem;
+    margin: auto;
+    cursor:pointer;
+}
+
+.activeStar{
+    color: #fff700;
+
+}
+
+.inactiveStar{
+    color: #000000;
+}
