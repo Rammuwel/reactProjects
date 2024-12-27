@@ -1,0 +1,20 @@
+.treeView{
+    width: 100%;
+    margin-top: 2rem; 
+    padding: 1rem;
+}
+
+.menu-list{
+    margin-left: 1rem;
+}
+
+.menu-item{
+   display: flex;
+   gap: 1rem;
+   padding: 0.5rem;
+}
+
+.menu-item span{
+    font-size: 24px;
+    font-weight: 600;
+}
