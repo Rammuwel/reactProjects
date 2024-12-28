@@ -4,8 +4,10 @@
     padding: 1rem;
 }
 
-.menu-list{
-    margin-left: 1rem;
+.menu-list{ 
+  background-color: royalblue;
+  width: 40%;
+  padding-left: 1rem;
 }
 
 .menu-item{
@@ -13,7 +15,10 @@
    gap: 1rem;
    padding: 0.5rem;
 }
-
+.menu-item  p, .menu-item span{
+   color: #fff;
+  
+}
 .menu-item span{
     font-size: 24px;
     font-weight: 600;
@@ -22,6 +27,12 @@
 .tree-view-container{
     width: 60%;
     margin: auto;
-    padding: 1rem;
+    /* padding: 1rem; */
+    background-color: #443333;
     
+}
+
+
+li{
+    list-style: none;
 }
