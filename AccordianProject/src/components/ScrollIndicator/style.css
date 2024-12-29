@@ -1,0 +1,35 @@
+.scrollIndicator{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.scrollIndicator-container{
+    width: 60%;
+    height: 500px;
+    overflow-y: scroll;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    
+}
+
+.upper-slider{
+    min-width: 100%;
+    min-height: 10px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.lower-slider{
+    width: 0%;
+    height: 8px;
+    background-color: #555555;
+    transition: all 0.2s;
+}
