@@ -10,6 +10,8 @@ import LoadMoreData from './components/LoadMoreData'
 import QRCode from './components/QRCode'
 import RandomColor from './components/randomColor'
 import ScrollIndicator from './components/ScrollIndicator'
+import SearchAutocomplete from './components/SearchAutoComplete'
+// import SearchAutocomplete from './components/SearchAutoComplete'
 import StartRatting from './components/StarRatting'
 import TicTacToe from './components/TicTacToe'
 import TreeView from './components/TreeView'
@@ -34,6 +36,7 @@ function App() {
      <ModelTest/>
      <GithubProfileFinder/>
      <TicTacToe/>
+     <SearchAutocomplete/>
 
    </div>
   ) 
