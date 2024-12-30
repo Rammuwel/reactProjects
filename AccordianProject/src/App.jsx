@@ -1,6 +1,9 @@
 
 import './App.css'
 import Accordian from './components/Accondian'
+import ModelTest from './components/CustemModelPopup/ModelTest'
+import TabTest from './components/custom-tab/tab-test'
+import GithubProfileFinder from './components/GitHubProfileFinder'
 import ImageSlider from './components/imageSlider'
 import LightDarkMode from './components/LightDarkMode'
 import LoadMoreData from './components/LoadMoreData'
@@ -24,8 +27,10 @@ function App() {
      <TreeView menus={menus}/>
      <QRCode/>
      <LightDarkMode/>
-
+     <TabTest/>
      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
+     <ModelTest/>
+     <GithubProfileFinder/>
 
    </div>
   ) 
