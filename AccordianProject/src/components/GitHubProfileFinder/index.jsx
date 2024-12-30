@@ -32,18 +32,23 @@ export default function GithubProfileFinder() {
     }
 
     return (
-        <div className="github-profile-container">
-            <div className="input-wrapper">
-                <input
-                    name="search-by-username"
-                    type="text"
-                    placeholder="Search Github Username..."
-                    value={userName}
-                    onChange={(event) => setUserName(event.target.value)}
-                />
-                <button onClick={handleSubmit}>Search</button>
+        <div className="git-hub-profile">
+            <div className="heading">
+                <h2>HitHub Profile Finder</h2>
             </div>
-            {userData !== null ? <User user={userData} /> : null}
+            <div className="github-profile-container">
+                <div className="input-wrapper">
+                    <input
+                        name="search-by-username"
+                        type="text"
+                        placeholder="Search Github Username..."
+                        value={userName}
+                        onChange={(event) => setUserName(event.target.value)}
+                    />
+                    <button onClick={handleSubmit}>Search</button>
+                </div>
+                {userData !== null ? <User user={userData} /> : null}
+            </div>
         </div>
     );
 }

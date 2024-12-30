@@ -11,8 +11,10 @@ import QRCode from './components/QRCode'
 import RandomColor from './components/randomColor'
 import ScrollIndicator from './components/ScrollIndicator'
 import StartRatting from './components/StarRatting'
+import TicTacToe from './components/TicTacToe'
 import TreeView from './components/TreeView'
 import {menus} from './components/TreeView/data'
+
 
 function App() {
 
@@ -31,6 +33,7 @@ function App() {
      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
      <ModelTest/>
      <GithubProfileFinder/>
+     <TicTacToe/>
 
    </div>
   ) 
